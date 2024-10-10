@@ -31,8 +31,10 @@ let stringNumber = String(someNumber)
 
 let value = 3
 let negValue = -value
-// console.log(negValue);
+// console.log(negValue); output -3
 
+
+basic math operations 
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
@@ -44,17 +46,18 @@ let str1 = "hello"
 let str2 = " hitesh"
 
 let str3 = str1 + str2
-// console.log(str3);
+// console.log(str3); output hello hitesh
+// sirf add hi kr skty hein, khein yeh na smjh lein k strings ko minus bhi kr skty hein.
 
-// console.log("1" + 2);
-// console.log(1 + "2");
-// console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log("1" + 2); output 12
+// console.log(1 + "2"); output 12
+// console.log("1" + 2 + 2); output 122
+// console.log(1 + 2 + "2"); output 32
 
-// console.log( (3 + 4) * 5 % 3);
+// console.log( (3 + 4) * 5 % 3); PLEASE DO NOT WRITE CODE LIKE IN ABOVE 3/4 LINES. WRITE CODE LIKE IN THIS LINE.
 
-// console.log(+true);
-// console.log(+"");
+// console.log(+true); output 1
+// console.log(+""); output 0 
 
 let num1, num2, num3
 
@@ -66,3 +69,4 @@ console.log(gameCounter);
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+// also about prefix and postfix increment on mdn docs
