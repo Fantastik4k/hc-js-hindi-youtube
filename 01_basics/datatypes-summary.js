@@ -55,3 +55,49 @@ Return type of variables in JavaScript
 */
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// in early langs like c, memeory ko reserve krna aur free krna apka hi kaam hota that.
+
+// 2 types of memory. stack and heap. 
+
+// primitve mein sub jgh stack use hoti hy. aur jitny bhi non-primitive types hein, udhr heap memory use hoti hy.
+// yeh yaad rkhna ju stack memory use hoti hy, jo bhi var apny declare kia, apko uska copy milta hy.
+
+// Stack (Primitve), Heap (Non-Primitive)
+
+let name = 'ahmad'
+
+let othername = name; // idhr apko name ki copy di jati hy.
+othername = 'azhar' // idhr hum copy ko change kr rhy hein to orignal to change ni hogi. wesy sense bhi nhi bnta k name ki value ko change hona chahye.
+
+console.log(name) // output ahmad
+console.log(othername) // output ahmad if we don't change value of othername. output azhar if we change value like above.
+
+// heap k andar jo bhi jata hy uska reference hi milta hy.
+
+let userOne = {
+    name: 'ahmad',
+    email: 'ahmad@gmail.com'
+};
+
+let userTwo = userOne;
+
+userTwo.email = 'hitesh@google.com'
+
+console.log(userOne.email) // output hitesh@google.com
+console.log(userTwo.email) // output hitesh@google.com
+
+
+
+
+
+
+
+
+
+
+
+
+
