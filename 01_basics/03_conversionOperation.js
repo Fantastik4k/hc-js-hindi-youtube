@@ -1,11 +1,11 @@
 let score = "hitesh"
 
-//console.log(typeof score);
-//console.log(typeof(score));
+//console.log(typeof score); if 33 then number, if "33" then string
+//console.log(typeof(score)); if 33 then number, if "33" then string
 
 let valueInNumber = Number(score)
-//console.log(typeof valueInNumber);
-//console.log(valueInNumber);
+//console.log(typeof valueInNumber); it will give us number, say score = "33"", will give us number if score = "33abc". Nan bhi aik special type hi, jub aap iski type check krty hein to wo number hi ati hy.
+//console.log(valueInNumber); it will give us Nan if score = 33abc, but if we check it type, like in above line, as expected, it will give us number.
 
 
 // "33" => 33
