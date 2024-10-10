@@ -5,17 +5,17 @@ let score = "hitesh"
 
 let valueInNumber = Number(score)
 //console.log(typeof valueInNumber); it will give us number, say score = "33"", will give us number if score = "33abc". Nan bhi aik special type hi, jub aap iski type check krty hein to wo number hi ati hy.
-//console.log(valueInNumber); it will give us Nan if score = 33abc, but if we check it type, like in above line, as expected, it will give us number.
+//console.log(valueInNumber); it will give us Nan if score = 33abc, but if we check its type, like in the above line, as expected, it will give us number. if score = null, then above line will give us number and this line will give us 0. if score = undefined, then this line will give us Nan and above line still number. if score = true, then this line gives us 1 and above line as expected number. if score = false, then this line will give us 0. if score = 'ahmad', then this will give us Nan and above line still number.
 
 
 // "33" => 33
 // "33abc" => NaN
 //  true => 1; false => 0
 
-let isLoggedIn = "hitesh"
+let isLoggedIn = "hitesh" 
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
-//  console.log(booleanIsLoggedIn);
+//  console.log(booleanIsLoggedIn); if isLoggedIn = 1, then this line gives us true. well in case of "hitesh", like now, it gives us true, but if "", meaning empty string, it will give us false.
 
 // 1 => true; 0 => false
 // "" => false
@@ -24,8 +24,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 let someNumber = 33
 
 let stringNumber = String(someNumber)
-// console.log(stringNumber);
-// console.log(typeof stringNumber);
+// console.log(stringNumber); output 33
+// console.log(typeof stringNumber); output string
 
 // *********************** Operations ***********************
 
