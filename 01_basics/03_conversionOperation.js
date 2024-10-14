@@ -5,7 +5,44 @@ let score = "hitesh"
 
 let valueInNumber = Number(score)
 //console.log(typeof valueInNumber); it will give us number, say score = "33"", will give us number if score = "33abc". Nan bhi aik special type hi, jub aap iski type check krty hein to wo number hi ati hy.
-//console.log(valueInNumber); it will give us Nan if score = 33abc, but if we check its type, like in the above line, as expected, it will give us number. if score = null, then above line will give us number and this line will give us 0. if score = undefined, then this line will give us Nan and above line still number. if score = true, then this line gives us 1 and above line as expected number. if score = false, then this line will give us 0. if score = 'ahmad', then this will give us Nan and above line still number.
+//console.log(valueInNumber); it will give us Nan if score = '33abc', but if we check its type, like in the above line, as expected, it will give us number. if score = null, then above line will give us number and this line will give us 0. if score = undefined, then this line will give us Nan and above line still number. if score = true, then this line gives us 1 and above line as expected number. if score = false, then this line will give us 0. if score = 'ahmad', then this will give us Nan and above line still number.
+
+/*
+let score = '33abc' // or 'abc33)
+let valueInNumber = Number(score)
+console.log(valueInNumber)
+NaN
+console.log(typeof valueInNumber)
+number
+*/
+
+/*
+let score = null
+let valueInNumber = Number(score)
+console.log(valueInNumber)
+0
+console.log(typeof valueInNumber)
+number
+*/
+
+/*
+the same happens if score = 'ahmad' // meaning string
+let score = undefined;
+let valueInNumber = Number(score)
+console.log(valueInNumber)
+NaN
+console.log(typeof valueInNumber)
+number
+*/
+
+/*
+let score = true //if false then, below will be 0, and number(as usual) respectively
+let valueInNumber = Number(score)
+console.log(valueInNumber)
+1
+console.log(typeof valueInNumber)
+number
+*/
 
 
 // "33" => 33
