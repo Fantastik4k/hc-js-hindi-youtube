@@ -8,6 +8,7 @@
 })(); // idhr semi colon lgana bhut zaroori hy.
 
 ( (name) => {
+    // unnamed IIFE
     console.log(`DB CONNECTED TWO ${name}`);
 } )('hitesh')
 
