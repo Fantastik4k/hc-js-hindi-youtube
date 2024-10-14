@@ -63,7 +63,7 @@ Return type of variables in JavaScript
 // 2 types of memory. stack and heap. 
 
 // primitve mein sub jgh stack use hoti hy. aur jitny bhi non-primitive types hein, udhr heap memory use hoti hy.
-// yeh yaad rkhna ju stack memory use hoti hy, jo bhi var apny declare kia, apko uska copy milta hy.
+// yeh yaad rkhna jub stack memory use hoti hy, jo bhi var apny declare kia, apko uska copy milta hy.
 
 // Stack (Primitve), Heap (Non-Primitive)
 
