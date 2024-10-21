@@ -9,6 +9,8 @@
 
 const month = "march"
 
+// suppose krein agr case "march" waly portion mein break lgana bhol jaty, to agy wala sara code execute hoga, except defualt. default wala code execute ni ho ga.
+
 switch (month) {
     case "jan":
         console.log("January");
