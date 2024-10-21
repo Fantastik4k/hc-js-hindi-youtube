@@ -3,7 +3,7 @@
 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
-//     return item
+//     return item // agr hum iss line k beghar likhein to forEach undefined return kry ga. but agr hum likh bhi dein to bhi undefined hi aye gi jb hum nechy values ko print kr rhy hein. yaani iska yeh matlub hwa k forEach undefined return krta hy.
 // } )
 
 // console.log(values);
@@ -11,9 +11,12 @@
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
-//     return num > 4
+//     return num > 4 -- agr aap arrow function k andar scope start krein to apko pta hoga k explicit return krna prta hy. begineer filter mein kafi yeh mistake krty hein.
 // } )
 
+// filter mein apko aik conidtion deni hoti hy
+
+// yeh thora sa harddcore tariqa hy. oper jo hum ny filter use kia, wo isi ka substitute hy.
 // const newNums = []
 
 // myNums.forEach( (num) => {
