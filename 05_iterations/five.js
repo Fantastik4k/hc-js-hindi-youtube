@@ -1,5 +1,7 @@
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
+// callback function ko name ni dety.
+
 // coding.forEach( function (val){
 //     console.log(val);
 // } )
@@ -12,6 +14,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
+// function ka reference dena hy, usko execute ni kr dena.
 // coding.forEach(printMe)
 
 // coding.forEach( (item, index, arr)=> {
