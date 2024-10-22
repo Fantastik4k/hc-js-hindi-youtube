@@ -19,6 +19,11 @@
    </div>
 </body>
 <script>
+    // js mein jitny bgi events hoty hein, wo sequentilly run hoty hein. kuch exception hein.
+    // direct html mein onclick="alert('owl clicked')" , krna bhi ghalat hy. kaam hojata hy but nhi krna chahye. nechy waly sy bhi kaam ho jata hy but still not a good way. ab react mein hum onclick, yani directly html mein js likhty hein, us cse mein sahi hota hy, wo react mein discuss krein gy
+    // eventlistner apko propogation ki bhi functionality dety hein jo k onclick k use k waqt I think nhi milti.
+    // event propogation ka 2 context hota hy. aik hota hy event bubbling, aur aik hota hy event capturing. market mein ziada event buddling use hota hy jo default hota hy, yaani eventlistener ka 3rd parameter, i.e false.
+    
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
