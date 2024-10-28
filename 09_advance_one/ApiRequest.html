@@ -8,7 +8,7 @@
 <body style="background-color: #212121;">
     0	UNSENT	Client has been created. open() not called yet.
 1	OPENED	open() has been called.
-2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+2	HEADERS_RECEIVED	 send() has been called, and headers and status are available.
 3	LOADING	Downloading; responseText holds partial data.
 4	DONE	The operation is complete.
 </body>
@@ -16,6 +16,9 @@
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest();
     xhr.open('GET', requestUrl)
+    // onreadystatechange ko aik function dena hota hy aur usmein basically hum yeh likhty hein k jb state ho to isko kia krna chahye.
+    // jb bhi apky paas response ata hy url sy, wo string mein hi ata hy, kbhi kbhi object ki form mein bhi a jata hy, but mostly string ki form mein ata hy.
+    // JSON.parse(), string ko json mein convert kr deta hy
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
@@ -26,4 +29,40 @@
     }
     xhr.send();
 </script>
+
+<!--     api basically aik talking language hy 2 systems k beech mein. yeh 2 systems backend aur frontend bhi ho skta hy. yhe
+backend/frontend done hmary ho skty hein, ya backend hmara aur frontend ksi aur ka, ya vice versa, ya backend ksi aur ka aur frontend bi ksi aur ka. hoskta hy apky 2 systmes apas mein baat krna chaty hein, aik java mein likha hwa hy, aur aik js mein, ya ruby mein
+
+api.github.com/users/Fantastik4k
+randomuser.me
+
+fetch new cheez hy. abhi hum prhein gy k fetch sy pehly hum api request kesy krty thy.
+
+ready state hoti hy xml k andar. apky pas 5 treh hi states hein. 0 => client open hwa hy but apny
+request bheji ni hy. 1 => open call ho gia hy, meaning request bhej di gyi hy. but req bhejna hi
+to kaam nhi hy, data wapis bhi to ana chahye, uska abhi koi kaam nhi hy. 2 => jo req bheji thi usky
+headers to agye lekin status waghera ni aya k data mila hy k ni mila.
+
+XMLHttpRequest method sy aap object bnaty ho. isi method k thru app data send kr skty ho aur 
+receive kr skty ho. yeh keh skty ho k yeh almost aik class hy, is sy object bnana prta hy with 
+using new keyword. open method mein 2 arhuments kgty hein. one method and 2nd string. method ka
+matlub kis treh ka request bhejna chahty ho. string ka matlub yaani url ki string. 
+
+
+console.log basically aik debugger hy. core js ka part ni hy. yeh browser ka dev tool hy. yeh 
+functinalty bascally runtime like v8 engines dety hein js ko. video mein hum v8 k source code
+py ja k hum ny d8 folder k andar bhi dekha.
+    -->
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
