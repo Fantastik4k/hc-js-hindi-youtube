@@ -8,8 +8,11 @@ class User {
     }
 }
 
+// kbhi iss user ko techaer, kbhi admin, kbhi student bnana pry ga, but username to sub ka rhy ga hi na.
+
 class Teacher extends User{
     constructor(username, email, password){
+        // old code mein hmein idhr .call(this, ) ak use krna prta tha.
         super(username)
         this.email = email
         this.password = password
@@ -25,6 +28,8 @@ const chai = new Teacher("chai", "chai@teacher.com", "123")
 chai.logMe()
 const masalaChai = new User("masalaChai")
 
+
+// masalaChai.addCoure() -- error
 masalaChai.logMe()
 
 console.log(chai instanceof User);
