@@ -1,3 +1,5 @@
+// mostly hum promises consume hi krty hein, bhut kum hota h k hum promise ko create krein. but iss video mein hum kyi truh k promises bnayen gy.
+// jb aap promise create kr rhy hoty ho Promise object ki help sy, to us time Promise object aik call back bhi leta hy. aap variable mein hold krny ki bjaye variable k beghair bhi Promise ko create kr skty hein
 const promiseOne = new Promise(function(resolve, reject){
     //Do an async task
     // DB calls, cryptography, network
@@ -20,6 +22,10 @@ new Promise(function(resolve, reject){
 }).then(function(){
     console.log("Async 2 resolved");
 })
+
+// resolve ka link then k sath hota hy. jub hum Promise create krty hein to aik resolve ki madad sy hum jo data return krna chahty hein, send kr skty hein. aur wo data jub hum Promise ko consume krty hein to use kr skty hein them mein. 
+// ziada tur apko resolve k andara data pass hota object ko form mein ho ga. chahye to aap array bhi pass kr skty hein ya function.
+
 
 const promiseThree = new Promise(function(resolve, reject){
     setTimeout(function(){
@@ -75,6 +81,9 @@ async function consumePromiseFive(){
 }
 
 consumePromiseFive()
+
+// type on google = > json placeholder typecode users
+
 
 // async function getAllUsers(){
 //     try {
