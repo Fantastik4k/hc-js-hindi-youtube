@@ -17,6 +17,13 @@ const user = {
 //console.log(user.getUserDetails());
 // console.log(this);
 
+// agr humein 2sra object bnana pry to humy dobara user2 = {}, is tariqy sy dubara sara kuch repeat krna pry ga.
+// const promiseOne = new Promise()
+// const date = new Date()
+// new keyword actually mein aik constructor function hy.
+// jb bhi new keyword use krty hein, aik empty object create hota hy, jisko instance bola jata hy.
+
+// myusername = username;
 
 function User(username, loginCount, isLoggedIn){
     this.username = username;
