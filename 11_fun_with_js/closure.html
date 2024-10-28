@@ -11,6 +11,14 @@
 </body>
 
     <script>
+
+/*
+
+closure ko prhny k liye lexical scoping ka pta hona chahye.
+A closure gives you access to an outer function's scope from an inner functions. In js, closures are created every time a function is created, at function creation time.
+*/
+        
+        
     // function init() {
     //     let name = "Mozilla"; 
     //     function displayName() {
@@ -20,16 +28,21 @@
     // }
     // init();
 
+/*
+init() creates a local variable called name and a function called displayName(). The displayName() function is an inner function that is defined inside init() and is available only within the body of the init() function. Note that the displayName() function has no local variables of its own. However, since inner functions have access to the variables of outer scopes, displayName() can access the variable name declared in the parent function, init(). This is basically lexical scoping.
+*/
+
+
     // function outer(){
     //     let username = "hitesh"
-    //     console.log("OUTER", secret);
+    //     console.log("OUTER", secret); -- idhr error aye ga. choty bron k sath share ni krty.
     //     function inner(){
     //         let secret = "my123"
     //         console.log("inner", username);
     //     }
     //     function innerTwo(){
     //         console.log("innerTwo", username);
-    //         console.log(secret);
+    //         console.log(secret); -- idhr error aye ga. sibling apas mein share nhi krein gy.
     //     }
     //     inner()
     //     innerTwo()
@@ -38,7 +51,8 @@
     // outer()
     // console.log("TOO OUTER", username);
 
-
+// closure ka matlub he k jb aap pura ka pura function hi return kr dety ho, to sirf function return nhi hota, bulky uska pura scope return hota hy. aur sirf uska scope hi nhi bulky uska lexical scope return hota hy.
+        
     // function makeFunc() {
     //     const name = "Mozilla";
     //     function displayName() {
