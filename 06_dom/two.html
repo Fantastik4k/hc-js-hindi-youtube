@@ -18,8 +18,9 @@
 </body>
 <script>
     const parent = document.querySelector('.parent')
-    // console.log(parent);
-    // console.log(parent.children);
+    // console.log(parent); -- <div class="parent"> ... </div>
+    // console.log(parent.children); -- yeh hmein aik HTMLCollection return kry ga. aur yeh collection 4 divs py mushtmil ho gi. aur idhr parent variable wala hy, na k .parent class wala HTMLCollection py aap elements ko array ki trah access kr skty ho like [0]
+    // HTMLCollection py aap forEach nhi lga skty. nodeList py aap forEach lga skty ho. collection py aap simple for loop to lga skty ho.
     // console.log(parent.children[1].innerHTML);
 
     // for (let i = 0; i < parent.children.length; i++) {
@@ -27,14 +28,14 @@
         
     // }
     parent.children[1].style.color = "orange"
-    // console.log(parent.firstElementChild);
-    // console.log(parent.lastElementChild);
+    // console.log(parent.firstElementChild); // <div class="day"> Monday </div>
+    // console.log(parent.lastElementChild); // <div class="day"> Thursday</div>
 
     const dayOne = document.querySelector('.day')
     // console.log(dayOne);
-    // console.log(dayOne.parentElement);
-    // console.log(dayOne.nextElementSibling);
+    // console.log(dayOne.parentElement); // querySelector bhut expensive operation hy, to idhr .parentElement kafi kaam ata hy. idhr line 21 wala answer aya ga.
+    // console.log(dayOne.nextElementSibling); // Tuesday wali div.
 
-    console.log("NODES: ", parent.childNodes);
+    console.log("NODES: ", parent.childNodes); // child nodes aik line break ko count krty hein, usky baad jitni mariz aap de lein.
 </script>
 </html>
