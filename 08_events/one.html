@@ -23,7 +23,9 @@
     // direct html mein onclick="alert('owl clicked')" , krna bhi ghalat hy. kaam hojata hy but nhi krna chahye. nechy waly sy bhi kaam ho jata hy but still not a good way. ab react mein hum onclick, yani directly html mein js likhty hein, us cse mein sahi hota hy, wo react mein discuss krein gy
     // eventlistner apko propogation ki bhi functionality dety hein jo k onclick k use k waqt I think nhi milti.
     // event propogation ka 2 context hota hy. aik hota hy event bubbling, aur aik hota hy event capturing. market mein ziada event buddling use hota hy jo default hota hy, yaani eventlistener ka 3rd parameter, i.e false.
-    
+    // event bubbling. agr aap image py click krein gy to pehly "owl clicked" aur phir "clicked inside the ul". bubbles necy to oper jaty hein. yeh tub hoga jb hum addEventListener ka 3rd argument false likhein gy, jo k by default hota hy. yaani agr aap kuch nhi likho jgy to false hi consider ho ga.
+    // event capturing. agr aap image py click krein gy to pehly "clicked inside the ul" aur phir "owl clicked". capturing top sy bottom py. yeh tub hoga jb hum addEventListener ka 3rd argument true likhein gy.
+    // ڈردو, اگر آپ چاہتے ہو کہ event propagation نہ ہو تو ایک method ہوتا ہے e.stopPropagation() اس سے وہ نہیں ہوگی. yaani agr aap image py click krei gy to sift "owl clicked" console py aye ga.
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
@@ -50,7 +52,11 @@
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
-   
+
+    // ev.target => <img> </img >
+    // ev.target.parentNode => <li> <img> </img> </li>
+    // let removeIt = e.target.parentNode
+    // removeIt.remove()
     
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
@@ -63,6 +69,6 @@
         
     })
     
-    //removeIt.parentNode.removeChild(removeIt)
+    //removeIt.parentNode.removeChild(removeIt) -- idhr hum ii ko select(removeIt.parentNode) kr k keh rhy hein k usky child li(.removeChild(removeIt) ko remove kr do.
 </script>
 </html>
